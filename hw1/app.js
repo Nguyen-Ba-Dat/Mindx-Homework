@@ -85,14 +85,12 @@ let employees3 = [
 
 function groupByName(employees) {
     return employees.reduce((acc, employee) => {
-        // Nếu key chưa có trong acc, khởi tạo với một mảng rỗng
         if (!acc[employee.name]) {
             acc[employee.name] = [];
         }
-        // Thêm nhân viên vào mảng của key tương ứng
         acc[employee.name].push(employee);
         return acc;
-    }, {}); // Khởi tạo acc là một đối tượng rỗng
+    }, {});
 }
 
 let groupedEmployees = groupByName(employees);
