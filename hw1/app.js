@@ -83,8 +83,8 @@ let employees3 = [
     { id: 4, name: "John", salary: 2200 },
 ];
 
-function groupByName(employees) {
-    return employees.reduce((acc, employee) => {
+function groupByName(employees3) {
+    return employees3.reduce((acc, employee) => {
         if (!acc[employee.name]) {
             acc[employee.name] = [];
         }
