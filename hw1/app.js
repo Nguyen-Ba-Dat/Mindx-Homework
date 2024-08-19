@@ -93,5 +93,5 @@ function groupByName(employees3) {
     }, {});
 }
 
-let groupedEmployees = groupByName(employees);
+let groupedEmployees = groupByName(employees3);
 console.log(groupedEmployees);
