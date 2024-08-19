@@ -83,15 +83,17 @@ let employees3 = [
     { id: 4, name: "John", salary: 2200 },
 ];
 
-let groupByName = (employees3) => {
-    return employees3.reduce((acc, employee) => {
+function groupByName(employees) {
+    return employees.reduce((acc, employee) => {
+        // Nếu key chưa có trong acc, khởi tạo với một mảng rỗng
         if (!acc[employee.name]) {
-            acc[employee.name] = []
+            acc[employee.name] = [];
         }
-        acc[employee.name].push(employee)
-        return acc
-    })
+        // Thêm nhân viên vào mảng của key tương ứng
+        acc[employee.name].push(employee);
+        return acc;
+    }, {}); // Khởi tạo acc là một đối tượng rỗng
 }
 
-const groupdEmployees = groupByName(employees3)
-console.log(groupdEmployees)
+let groupedEmployees = groupByName(employees);
+console.log(groupedEmployees);
