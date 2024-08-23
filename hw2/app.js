@@ -66,3 +66,39 @@ const employeeSummary = createEmployeeSummary(employees2)
 console.log(employeeSummary)
 
 //13
+let tasks = [ 
+    { name: "Hoàn thành bài tập JavaScript", description: "Làm xong bài tập về Array và Object", completed: false },
+    { name: "Đọc sách", description: "Đọc xong chương 3", completed: true },
+    { name: "Đi mua hàng", description: "Mua thêm thức ăn cho tuần", completed: false }
+];
+
+function addTask(tasks, name, description) {
+    tasks.push({ name, description, completed: false })
+}
+
+function completeTask(tasks, taskName) {
+    const task = tasks.find(task => task.name === taskName)
+    if (task) {
+        task.completed = true
+    }
+}
+
+function sortTasks(tasks, direction = "asc") {
+    return tasks.sort((a, b) => {
+        if (direction === "asc") {
+            return a.name.localeCompare(b.name)
+        } else if (direction === "desc") {
+            return b.name.localeCompare(a.name)
+        }
+    })
+}
+
+addTask(tasks, "Học lập trình Python")
+
+completeTask(tasks, "Hoàn thành bài tập JavaScript")
+
+let sortedTasksAsc = sortTasks(tasks, "asc")
+let sortedTasksDesc = sortTasks(tasks, "desc")
+
+console.log(sortedTasksAsc)
+console.log(sortedTasksDesc)
