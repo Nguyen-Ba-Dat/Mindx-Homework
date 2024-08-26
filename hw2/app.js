@@ -102,3 +102,4 @@ let sortedTasksDesc = sortTasks(tasks, "desc")
 
 console.log(sortedTasksAsc)
 console.log(sortedTasksDesc)
+
