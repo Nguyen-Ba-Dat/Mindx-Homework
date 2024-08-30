@@ -8,10 +8,7 @@ function Modal() {
   return (
     <div className="modal">
       <Product />
-      <button onClick={() => setShowComments(!showComments)}>
-        {showComments ? 'Ẩn bình luận' : 'Hiện bình luận'}
-      </button>
-      {showComments && <CommentSection />}
+      <CommentSection />
     </div>
   )
 }

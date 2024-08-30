@@ -26,22 +26,11 @@ const CommentSection = () => {
   };
 
   return (
-    <div className="comment-section">
-      <div className="add-comment">
-        <textarea
-          value={newComment}
-          onChange={(e) => setNewComment(e.target.value)}
-          placeholder="Add a comment..."
-        ></textarea>
-        <button onClick={handleAddComment} className="comment-submit-btn">
-          Comment
-        </button>
-      </div>
-
+    <div className="comment-section container">
       {comments.map((comment) => (
         <div key={comment.id} className="comment">
           <img
-            src="path-to-avatar-image"
+            src="./public/Ellipse1.png"
             alt="User Avatar"
             className="user-avatar"
           />
@@ -57,6 +46,17 @@ const CommentSection = () => {
           </div>
         </div>
       ))}
+
+      <div className="add-comment">
+        <textarea
+          value={newComment}
+          onChange={(e) => setNewComment(e.target.value)}
+          placeholder="Thêm bình luận..."
+        ></textarea>
+        <button onClick={handleAddComment} className="comment-submit-btn">
+          Bình luận
+        </button>
+      </div>
     </div>
   );
 };

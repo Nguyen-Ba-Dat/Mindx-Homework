@@ -1,13 +1,8 @@
-/* ProductPage.css */
-
 .container {
   padding: 20px;
   font-family: Arial, sans-serif;
   max-width: 800px;
   margin: auto;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .product-header {
@@ -54,20 +49,23 @@
 }
 
 .rating span {
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 5px;
   color: #ffc107;
 }
 
 .price {
   font-size: 18px;
-  color: #333;
+  color: #f00;
   margin-bottom: 20px;
 }
 
 .price b {
-  color: red;
   font-size: 20px;
+}
+
+.price del {
+  color: #888;
 }
 
 .size-selection {
@@ -102,15 +100,23 @@
   margin-top: 20px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .quantity-selector button {
-  padding: 10px 15px;
-  background-color: #f0f0f0;
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5f5;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  color: #333;
   transition: background-color 0.3s ease;
+}
+
+.quantity-selector button:hover {
+  background-color: #ff6b6b;
 }
 
 .quantity-selector span {
@@ -119,7 +125,7 @@
 }
 
 .choose-btn {
-  margin-left: 20px;
+  width: 200px;
   background-color: #ff6b6b;
   color: white;
   padding: 10px 20px;
@@ -133,51 +139,10 @@
   background-color: #ff4f4f;
 }
 
-.delete-icon {
-  position: relative;
-  top: -20px;
-  right: -20px;
-  cursor: pointer;
-}
-
+.delete-icon,
 .close-icon {
   position: relative;
   top: -20px;
   right: -20px;
   cursor: pointer;
-}
-
-.product-details h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.rating span {
-  color: #ffc107;
-  font-size: 20px;
-}
-
-.price {
-  color: #f00;
-  font-size: 18px;
-}
-
-.price del {
-  color: #888;
-}
-
-.quantity-selector button {
-  width: 30px;
-  height: 30px;
-  background-color: #f5f5f5;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  color: #333;
-  transition: background-color 0.3s ease;
-}
-
-.quantity-selector button:hover {
-  background-color: #e0e0e0;
 }

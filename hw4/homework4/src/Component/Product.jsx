@@ -56,6 +56,7 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <p>Ngũ hạt thập cẩm đặc sản Langfarm - Món ăn vặt ưa thích, hương vị thơm ngon, an toàn vệ sinh. Phù hợp làm quà vào các dịp lễ, thân thiện với mọi nhà</p>
     </div>
   );
 };
