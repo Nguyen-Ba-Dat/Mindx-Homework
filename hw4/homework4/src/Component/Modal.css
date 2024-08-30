@@ -1,0 +1,202 @@
+/* ProductPage.css */
+
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.product-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.price {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price b {
+  color: red;
+  font-size: 20px;
+}
+
+.size-selection {
+  margin-top: 20px;
+}
+
+.size-selection h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.size-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.size-buttons button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.size-buttons button.active,
+.size-buttons button:hover {
+  background-color: #d1d1d1;
+}
+
+.quantity-selector {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.quantity-selector button {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-selector span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.choose-btn {
+  margin-left: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.choose-btn:hover {
+  background-color: #ff4f4f;
+}
+
+.comment-section {
+  margin-top: 30px;
+}
+
+.comment-section b {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.comment-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.comment-box p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.comment-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.comment-btn {
+  margin-top: 10px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-btn:hover {
+  background-color: #2980b9;
+}
+
+.notes-section {
+  margin-top: 30px;
+}
+
+.notes-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.notes-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.notes-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
